@@ -25,13 +25,16 @@ namespace GLASS_WITH_DATABASE
         private void customizeDesign()
         {
             subPnlBtnClass.Visible = false;
-            
+            subPnlBtnAccount.Visible = false;
+
         }
 
         private void hideSubMenu()
         {
             if (subPnlBtnClass.Visible == true)
                 subPnlBtnClass.Visible = false;
+            if (subPnlBtnAccount.Visible == true)
+                subPnlBtnAccount.Visible = false;
         }
 
         public void showSubMenu(Panel subMenu)
@@ -59,15 +62,20 @@ namespace GLASS_WITH_DATABASE
             childForm.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            openChildForm(new teacherClass());
-            hideSubMenu();
-        }
-
-        private void btnClass_Click_1(object sender, EventArgs e)
+        private void btnClass_Click(object sender, EventArgs e)
         {
             showSubMenu(subPnlBtnClass);
+        }
+
+        private void btnAccount_Click_1(object sender, EventArgs e)
+        {
+            showSubMenu(subPnlBtnAccount);
+        }
+
+        private void btnEditUsername_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new editAccountCF());
+            hideSubMenu();
         }
     }
 }

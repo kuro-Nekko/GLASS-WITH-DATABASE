@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GLASS_WITH_DATABASE
 {
-    public partial class teacherClass : Form
+    public partial class teacherUsernameEditForm : Form
     {
-        public teacherClass()
+        public teacherUsernameEditForm()
         {
             InitializeComponent();
         }
