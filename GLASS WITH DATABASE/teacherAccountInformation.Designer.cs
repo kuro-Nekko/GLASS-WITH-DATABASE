@@ -29,75 +29,72 @@
         private void InitializeComponent()
         {
             this.lblOldUsername = new System.Windows.Forms.Label();
-            this.tbxOldUsername = new System.Windows.Forms.TextBox();
+            this.tbxUsername = new System.Windows.Forms.TextBox();
             this.lblOldPassword = new System.Windows.Forms.Label();
-            this.tbxOldPassword = new System.Windows.Forms.TextBox();
+            this.tbxPassword = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.lblTeacherID = new System.Windows.Forms.Label();
             this.tbxTeacherID = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnEditUsername = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.lblAccountInformation = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbxFirstname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.tbxLastname = new System.Windows.Forms.TextBox();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.tbxAddress = new System.Windows.Forms.TextBox();
+            this.tbxContactNumber = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblOldUsername
             // 
             this.lblOldUsername.AutoSize = true;
             this.lblOldUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOldUsername.Location = new System.Drawing.Point(95, 180);
+            this.lblOldUsername.Location = new System.Drawing.Point(90, 170);
             this.lblOldUsername.Name = "lblOldUsername";
             this.lblOldUsername.Size = new System.Drawing.Size(108, 25);
             this.lblOldUsername.TabIndex = 1;
             this.lblOldUsername.Text = "Username:";
             // 
-            // tbxOldUsername
+            // tbxUsername
             // 
-            this.tbxOldUsername.Location = new System.Drawing.Point(230, 180);
-            this.tbxOldUsername.Multiline = true;
-            this.tbxOldUsername.Name = "tbxOldUsername";
-            this.tbxOldUsername.Size = new System.Drawing.Size(220, 25);
-            this.tbxOldUsername.TabIndex = 2;
-            this.tbxOldUsername.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbxUsername.Font = new System.Drawing.Font("Garamond", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxUsername.Location = new System.Drawing.Point(225, 170);
+            this.tbxUsername.Multiline = true;
+            this.tbxUsername.Name = "tbxUsername";
+            this.tbxUsername.Size = new System.Drawing.Size(295, 35);
+            this.tbxUsername.TabIndex = 2;
             // 
             // lblOldPassword
             // 
             this.lblOldPassword.AutoSize = true;
             this.lblOldPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOldPassword.Location = new System.Drawing.Point(100, 240);
+            this.lblOldPassword.Location = new System.Drawing.Point(95, 230);
             this.lblOldPassword.Name = "lblOldPassword";
             this.lblOldPassword.Size = new System.Drawing.Size(104, 25);
             this.lblOldPassword.TabIndex = 5;
             this.lblOldPassword.Text = "Password:";
             // 
-            // tbxOldPassword
+            // tbxPassword
             // 
-            this.tbxOldPassword.Location = new System.Drawing.Point(230, 240);
-            this.tbxOldPassword.Multiline = true;
-            this.tbxOldPassword.Name = "tbxOldPassword";
-            this.tbxOldPassword.Size = new System.Drawing.Size(220, 25);
-            this.tbxOldPassword.TabIndex = 6;
-            this.tbxOldPassword.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.tbxPassword.Font = new System.Drawing.Font("Garamond", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxPassword.Location = new System.Drawing.Point(225, 230);
+            this.tbxPassword.Multiline = true;
+            this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.Size = new System.Drawing.Size(295, 35);
+            this.tbxPassword.TabIndex = 6;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(100, 360);
+            this.lblName.Location = new System.Drawing.Point(95, 340);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(112, 25);
             this.lblName.TabIndex = 7;
@@ -105,18 +102,19 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(310, 600);
+            this.btnSave.Location = new System.Drawing.Point(305, 615);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(100, 35);
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblTeacherID
             // 
             this.lblTeacherID.AutoSize = true;
             this.lblTeacherID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeacherID.Location = new System.Drawing.Point(90, 120);
+            this.lblTeacherID.Location = new System.Drawing.Point(85, 110);
             this.lblTeacherID.Name = "lblTeacherID";
             this.lblTeacherID.Size = new System.Drawing.Size(115, 25);
             this.lblTeacherID.TabIndex = 12;
@@ -124,44 +122,28 @@
             // 
             // tbxTeacherID
             // 
-            this.tbxTeacherID.Location = new System.Drawing.Point(230, 120);
+            this.tbxTeacherID.Font = new System.Drawing.Font("Garamond", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxTeacherID.Location = new System.Drawing.Point(225, 110);
             this.tbxTeacherID.Multiline = true;
             this.tbxTeacherID.Name = "tbxTeacherID";
-            this.tbxTeacherID.Size = new System.Drawing.Size(220, 25);
+            this.tbxTeacherID.Size = new System.Drawing.Size(295, 35);
             this.tbxTeacherID.TabIndex = 13;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(420, 600);
+            this.button1.Location = new System.Drawing.Point(415, 615);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 35);
             this.button1.TabIndex = 14;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnEditUsername
-            // 
-            this.btnEditUsername.Location = new System.Drawing.Point(465, 175);
-            this.btnEditUsername.Name = "btnEditUsername";
-            this.btnEditUsername.Size = new System.Drawing.Size(55, 35);
-            this.btnEditUsername.TabIndex = 15;
-            this.btnEditUsername.Text = "Edit...";
-            this.btnEditUsername.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(465, 235);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 35);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Edit...";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblAccountInformation
             // 
             this.lblAccountInformation.AutoSize = true;
             this.lblAccountInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAccountInformation.Location = new System.Drawing.Point(235, 70);
+            this.lblAccountInformation.Location = new System.Drawing.Point(230, 60);
             this.lblAccountInformation.Name = "lblAccountInformation";
             this.lblAccountInformation.Size = new System.Drawing.Size(185, 25);
             this.lblAccountInformation.TabIndex = 17;
@@ -173,7 +155,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(125, 60);
+            this.label2.Location = new System.Drawing.Point(120, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 25);
             this.label2.TabIndex = 18;
@@ -185,7 +167,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(435, 60);
+            this.label3.Location = new System.Drawing.Point(430, 50);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 25);
             this.label3.TabIndex = 19;
@@ -197,7 +179,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(440, 305);
+            this.label4.Location = new System.Drawing.Point(435, 285);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 25);
             this.label4.TabIndex = 22;
@@ -209,7 +191,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(125, 305);
+            this.label5.Location = new System.Drawing.Point(120, 285);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 25);
             this.label5.TabIndex = 21;
@@ -219,116 +201,110 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(235, 315);
+            this.label6.Location = new System.Drawing.Point(230, 295);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(190, 25);
             this.label6.TabIndex = 20;
             this.label6.Text = "Personal Information";
             // 
-            // textBox2
+            // tbxFirstname
             // 
-            this.textBox2.Location = new System.Drawing.Point(230, 360);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 25);
-            this.textBox2.TabIndex = 23;
+            this.tbxFirstname.Font = new System.Drawing.Font("Garamond", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxFirstname.Location = new System.Drawing.Point(225, 340);
+            this.tbxFirstname.Multiline = true;
+            this.tbxFirstname.Name = "tbxFirstname";
+            this.tbxFirstname.Size = new System.Drawing.Size(295, 35);
+            this.tbxFirstname.TabIndex = 23;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(100, 425);
+            this.label1.Location = new System.Drawing.Point(95, 405);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 25);
             this.label1.TabIndex = 24;
             this.label1.Text = "Last Name:";
             // 
-            // textBox1
+            // tbxLastname
             // 
-            this.textBox1.Location = new System.Drawing.Point(230, 420);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 25);
-            this.textBox1.TabIndex = 25;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(465, 355);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(55, 35);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Edit...";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(465, 415);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(55, 35);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Edit...";
-            this.button4.UseVisualStyleBackColor = true;
+            this.tbxLastname.Font = new System.Drawing.Font("Garamond", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxLastname.Location = new System.Drawing.Point(225, 400);
+            this.tbxLastname.Multiline = true;
+            this.tbxLastname.Name = "tbxLastname";
+            this.tbxLastname.Size = new System.Drawing.Size(295, 35);
+            this.tbxLastname.TabIndex = 25;
             // 
             // lblAddress
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(100, 485);
+            this.lblAddress.Location = new System.Drawing.Point(95, 515);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(91, 25);
             this.lblAddress.TabIndex = 28;
             this.lblAddress.Text = "Address:";
             // 
-            // textBox3
+            // tbxAddress
             // 
-            this.textBox3.Location = new System.Drawing.Point(230, 480);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(220, 75);
-            this.textBox3.TabIndex = 29;
+            this.tbxAddress.Font = new System.Drawing.Font("Garamond", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxAddress.Location = new System.Drawing.Point(225, 510);
+            this.tbxAddress.Multiline = true;
+            this.tbxAddress.Name = "tbxAddress";
+            this.tbxAddress.Size = new System.Drawing.Size(295, 75);
+            this.tbxAddress.TabIndex = 29;
             // 
-            // button5
+            // tbxContactNumber
             // 
-            this.button5.Location = new System.Drawing.Point(465, 515);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(55, 35);
-            this.button5.TabIndex = 30;
-            this.button5.Text = "Edit...";
-            this.button5.UseVisualStyleBackColor = true;
+            this.tbxContactNumber.Font = new System.Drawing.Font("Garamond", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxContactNumber.Location = new System.Drawing.Point(270, 450);
+            this.tbxContactNumber.Multiline = true;
+            this.tbxContactNumber.Name = "tbxContactNumber";
+            this.tbxContactNumber.Size = new System.Drawing.Size(246, 40);
+            this.tbxContactNumber.TabIndex = 31;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(95, 455);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(160, 25);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Contact Number:";
             // 
             // editAccountCF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(218)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(633, 700);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbxContactNumber);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.tbxAddress);
             this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxLastname);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbxFirstname);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblAccountInformation);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnEditUsername);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbxTeacherID);
             this.Controls.Add(this.lblTeacherID);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.tbxOldPassword);
+            this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.lblOldPassword);
-            this.Controls.Add(this.tbxOldUsername);
+            this.Controls.Add(this.tbxUsername);
             this.Controls.Add(this.lblOldUsername);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "editAccountCF";
             this.Text = "teacherClass";
+            this.Load += new System.EventHandler(this.editAccountCF_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,29 +312,26 @@
 
         #endregion
         private System.Windows.Forms.Label lblOldUsername;
-        private System.Windows.Forms.TextBox tbxOldUsername;
+        private System.Windows.Forms.TextBox tbxUsername;
         private System.Windows.Forms.Label lblOldPassword;
-        private System.Windows.Forms.TextBox tbxOldPassword;
+        private System.Windows.Forms.TextBox tbxPassword;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lblTeacherID;
         private System.Windows.Forms.TextBox tbxTeacherID;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnEditUsername;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblAccountInformation;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbxFirstname;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox tbxLastname;
         private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox tbxAddress;
+        private System.Windows.Forms.TextBox tbxContactNumber;
+        private System.Windows.Forms.Label label7;
     }
 }

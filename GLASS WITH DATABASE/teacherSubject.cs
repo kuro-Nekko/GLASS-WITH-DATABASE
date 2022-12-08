@@ -5,16 +5,21 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GLASS_WITH_DATABASE
 {
-    public partial class teacherUsernameEditForm : Form
+    public partial class teacherSubject : Form
     {
-        public teacherUsernameEditForm()
+        public teacherSubject()
         {
             InitializeComponent();
+        }
+
+        private void btnMath_Click(object sender, EventArgs e)
+        {
+            Form form = new calendar();
+            form.ShowDialog();
         }
     }
 }

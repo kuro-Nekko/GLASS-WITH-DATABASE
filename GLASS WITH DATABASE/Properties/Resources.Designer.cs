@@ -63,6 +63,16 @@ namespace GLASS_WITH_DATABASE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Light_Blue_w__Clear_BG {
+            get {
+                object obj = ResourceManager.GetObject("Light Blue w_ Clear BG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap loadingScreen_RoyalBlue {
             get {
                 object obj = ResourceManager.GetObject("loadingScreen-RoyalBlue", resourceCulture);

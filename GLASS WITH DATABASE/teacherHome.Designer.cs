@@ -28,10 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(teacherHome));
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlMainChildForm = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pnlMainTeacherTab = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnSignOut = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.subPnlBtnAccount = new System.Windows.Forms.Panel();
+            this.btnAddStudent = new System.Windows.Forms.Button();
             this.btnEditInfo = new System.Windows.Forms.Button();
             this.btnAccount = new System.Windows.Forms.Button();
             this.subPnlBtnClass = new System.Windows.Forms.Panel();
@@ -41,29 +49,20 @@
             this.btn1Y = new System.Windows.Forms.Button();
             this.btnClass = new System.Windows.Forms.Button();
             this.subPnlInfo = new System.Windows.Forms.Panel();
-            this.pnlTaskbar = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnAddStudent = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnSignOut = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlTaskbar = new System.Windows.Forms.Panel();
             this.pnlMain.SuspendLayout();
             this.pnlMainTeacherTab.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.subPnlBtnAccount.SuspendLayout();
             this.subPnlBtnClass.SuspendLayout();
-            this.pnlTaskbar.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMain
             // 
             this.pnlMain.Controls.Add(this.pnlMainChildForm);
+            this.pnlMain.Controls.Add(this.panel5);
             this.pnlMain.Controls.Add(this.panel4);
             this.pnlMain.Controls.Add(this.pnlMainTeacherTab);
             this.pnlMain.Controls.Add(this.panel3);
@@ -78,16 +77,37 @@
             // 
             // pnlMainChildForm
             // 
+            this.pnlMainChildForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMainChildForm.BackgroundImage")));
+            this.pnlMainChildForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlMainChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMainChildForm.Location = new System.Drawing.Point(245, 25);
+            this.pnlMainChildForm.Location = new System.Drawing.Point(255, 15);
             this.pnlMainChildForm.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMainChildForm.Name = "pnlMainChildForm";
-            this.pnlMainChildForm.Size = new System.Drawing.Size(635, 655);
+            this.pnlMainChildForm.Size = new System.Drawing.Size(630, 670);
             this.pnlMainChildForm.TabIndex = 7;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(151)))), ((int)(((byte)(255)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(240, 15);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(15, 670);
+            this.panel5.TabIndex = 32;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(151)))), ((int)(((byte)(255)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(885, 15);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(15, 670);
+            this.panel4.TabIndex = 10;
             // 
             // pnlMainTeacherTab
             // 
             this.pnlMainTeacherTab.AutoScroll = true;
+            this.pnlMainTeacherTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(151)))), ((int)(((byte)(255)))));
             this.pnlMainTeacherTab.Controls.Add(this.panel2);
             this.pnlMainTeacherTab.Controls.Add(this.btnSettings);
             this.pnlMainTeacherTab.Controls.Add(this.subPnlBtnAccount);
@@ -96,11 +116,55 @@
             this.pnlMainTeacherTab.Controls.Add(this.btnClass);
             this.pnlMainTeacherTab.Controls.Add(this.subPnlInfo);
             this.pnlMainTeacherTab.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlMainTeacherTab.Location = new System.Drawing.Point(20, 25);
+            this.pnlMainTeacherTab.Location = new System.Drawing.Point(15, 15);
             this.pnlMainTeacherTab.Margin = new System.Windows.Forms.Padding(4);
             this.pnlMainTeacherTab.Name = "pnlMainTeacherTab";
-            this.pnlMainTeacherTab.Size = new System.Drawing.Size(225, 655);
+            this.pnlMainTeacherTab.Size = new System.Drawing.Size(225, 670);
             this.pnlMainTeacherTab.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnExit);
+            this.panel2.Controls.Add(this.btnSignOut);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 687);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(204, 65);
+            this.panel2.TabIndex = 6;
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnExit.Location = new System.Drawing.Point(20, 20);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(65, 28);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnSignOut
+            // 
+            this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSignOut.Location = new System.Drawing.Point(125, 20);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(65, 28);
+            this.btnSignOut.TabIndex = 1;
+            this.btnSignOut.Text = "Signout";
+            this.btnSignOut.UseVisualStyleBackColor = true;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSettings.Location = new System.Drawing.Point(0, 613);
+            this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(204, 74);
+            this.btnSettings.TabIndex = 5;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.UseVisualStyleBackColor = true;
             // 
             // subPnlBtnAccount
             // 
@@ -112,6 +176,18 @@
             this.subPnlBtnAccount.Name = "subPnlBtnAccount";
             this.subPnlBtnAccount.Size = new System.Drawing.Size(204, 101);
             this.subPnlBtnAccount.TabIndex = 4;
+            // 
+            // btnAddStudent
+            // 
+            this.btnAddStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnAddStudent.Location = new System.Drawing.Point(0, 49);
+            this.btnAddStudent.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddStudent.Name = "btnAddStudent";
+            this.btnAddStudent.Size = new System.Drawing.Size(204, 49);
+            this.btnAddStudent.TabIndex = 1;
+            this.btnAddStudent.Text = "Add Student";
+            this.btnAddStudent.UseVisualStyleBackColor = true;
             // 
             // btnEditInfo
             // 
@@ -199,9 +275,12 @@
             this.btn1Y.TabIndex = 0;
             this.btn1Y.Text = "First Year";
             this.btn1Y.UseVisualStyleBackColor = true;
+            this.btn1Y.Click += new System.EventHandler(this.btn1Y_Click);
+            this.btn1Y.MouseClick += new System.Windows.Forms.MouseEventHandler(this.btn1Y_MouseClick);
             // 
             // btnClass
             // 
+            this.btnClass.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.btnClass.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnClass.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnClass.Location = new System.Drawing.Point(0, 166);
@@ -210,7 +289,7 @@
             this.btnClass.Size = new System.Drawing.Size(204, 74);
             this.btnClass.TabIndex = 1;
             this.btnClass.Text = "Class";
-            this.btnClass.UseVisualStyleBackColor = true;
+            this.btnClass.UseVisualStyleBackColor = false;
             this.btnClass.Click += new System.EventHandler(this.btnClass_Click);
             // 
             // subPnlInfo
@@ -222,147 +301,51 @@
             this.subPnlInfo.Size = new System.Drawing.Size(204, 166);
             this.subPnlInfo.TabIndex = 0;
             // 
-            // pnlTaskbar
+            // panel3
             // 
-            this.pnlTaskbar.Controls.Add(this.button2);
-            this.pnlTaskbar.Controls.Add(this.button1);
-            this.pnlTaskbar.Controls.Add(this.btnClose);
-            this.pnlTaskbar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTaskbar.Location = new System.Drawing.Point(0, 0);
-            this.pnlTaskbar.Name = "pnlTaskbar";
-            this.pnlTaskbar.Size = new System.Drawing.Size(900, 25);
-            this.pnlTaskbar.TabIndex = 5;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.Font = new System.Drawing.Font("Swis721 BlkEx BT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(840, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(20, 25);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "X";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Font = new System.Drawing.Font("Swis721 BlkEx BT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(860, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(20, 25);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnClose.Font = new System.Drawing.Font("Swis721 BlkEx BT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(880, 0);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 25);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            // 
-            // btnAddStudent
-            // 
-            this.btnAddStudent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddStudent.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnAddStudent.Location = new System.Drawing.Point(0, 49);
-            this.btnAddStudent.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAddStudent.Name = "btnAddStudent";
-            this.btnAddStudent.Size = new System.Drawing.Size(204, 49);
-            this.btnAddStudent.TabIndex = 1;
-            this.btnAddStudent.Text = "Add Student";
-            this.btnAddStudent.UseVisualStyleBackColor = true;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(151)))), ((int)(((byte)(255)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 15);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(15, 670);
+            this.panel3.TabIndex = 9;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(151)))), ((int)(((byte)(255)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 680);
+            this.panel1.Location = new System.Drawing.Point(0, 685);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(900, 20);
+            this.panel1.Size = new System.Drawing.Size(900, 15);
             this.panel1.TabIndex = 8;
             // 
-            // btnSettings
+            // pnlTaskbar
             // 
-            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSettings.Location = new System.Drawing.Point(0, 613);
-            this.btnSettings.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(204, 74);
-            this.btnSettings.TabIndex = 5;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnExit);
-            this.panel2.Controls.Add(this.btnSignOut);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 687);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(204, 65);
-            this.panel2.TabIndex = 6;
-            // 
-            // btnSignOut
-            // 
-            this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnSignOut.Location = new System.Drawing.Point(125, 20);
-            this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.Size = new System.Drawing.Size(65, 28);
-            this.btnSignOut.TabIndex = 1;
-            this.btnSignOut.Text = "Signout";
-            this.btnSignOut.UseVisualStyleBackColor = true;
-            // 
-            // btnExit
-            // 
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnExit.Location = new System.Drawing.Point(20, 20);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(65, 28);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 25);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(20, 655);
-            this.panel3.TabIndex = 9;
-            // 
-            // panel4
-            // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(880, 25);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(20, 655);
-            this.panel4.TabIndex = 10;
+            this.pnlTaskbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(151)))), ((int)(((byte)(255)))));
+            this.pnlTaskbar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTaskbar.Location = new System.Drawing.Point(0, 0);
+            this.pnlTaskbar.Name = "pnlTaskbar";
+            this.pnlTaskbar.Size = new System.Drawing.Size(900, 15);
+            this.pnlTaskbar.TabIndex = 5;
             // 
             // teacherHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 700);
+            this.ControlBox = false;
             this.Controls.Add(this.pnlMain);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "teacherHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "teacherHome";
+            this.Text = "Teacher Home";
             this.Load += new System.EventHandler(this.teacherHome_Load);
             this.pnlMain.ResumeLayout(false);
             this.pnlMainTeacherTab.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.subPnlBtnAccount.ResumeLayout(false);
             this.subPnlBtnClass.ResumeLayout(false);
-            this.pnlTaskbar.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -383,9 +366,6 @@
         private System.Windows.Forms.Button btnClass;
         private System.Windows.Forms.Panel subPnlInfo;
         private System.Windows.Forms.Panel pnlTaskbar;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnAddStudent;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -394,5 +374,6 @@
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
     }
 }

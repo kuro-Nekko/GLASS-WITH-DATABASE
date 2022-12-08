@@ -1,7 +1,9 @@
-﻿using System;
+﻿using static System.Globalization.Calendar;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GLASS_WITH_DATABASE
@@ -16,6 +18,9 @@ namespace GLASS_WITH_DATABASE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new loadingScreen());
+            //Application.Run(new logInScreen());
+            //Application.Run(new calendar());
             Application.Run(new teacherHome());
         }
     }

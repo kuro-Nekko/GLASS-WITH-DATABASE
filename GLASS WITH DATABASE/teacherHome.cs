@@ -1,11 +1,13 @@
-﻿using System;
+﻿using static System.Globalization.Calendar;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GLASS_WITH_DATABASE
@@ -76,6 +78,30 @@ namespace GLASS_WITH_DATABASE
         {
             openChildForm(new editAccountCF());
             hideSubMenu();
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Form form = new logInScreen();
+            this.Hide();
+            form.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btn1Y_Click(object sender, EventArgs e)
+        {
+            openChildForm(new teacherSubject());
+            hideSubMenu();
+
+        }
+
+        private void btn1Y_MouseClick(object sender, MouseEventArgs e)
+        {
+            pnlMainChildForm.Controls.Clear();
         }
     }
 }
