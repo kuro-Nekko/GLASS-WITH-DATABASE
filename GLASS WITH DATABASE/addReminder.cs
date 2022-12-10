@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GLASS_WITH_DATABASE
 {
@@ -40,6 +41,13 @@ namespace GLASS_WITH_DATABASE
             this.Hide();
             cmd.Dispose();
             connection.Close(); 
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            Form form = new uploadFile();
+            form.Show();
+            this.Hide();
         }
     }
 }

@@ -15,7 +15,9 @@ namespace GLASS_WITH_DATABASE
     {
 
         public OdbcConnection connection = new OdbcConnection("DRIVER={MySQL ODBC 5.1 Driver};Server=localhost;Port=3306;DATABASE=glassdatabase;uId=root;pwd=root;OPTION=3;");
-        public string user = logInScreen.userid;
+        public string teacher = logInScreen.teacherID;
+        public string userName = logInScreen.userName;
+        public string userPassword = logInScreen.userPassword;
 
 
 
@@ -32,13 +34,13 @@ namespace GLASS_WITH_DATABASE
         {
             
             connection.Open();
-            OdbcCommand cmd = new OdbcCommand("SELECT * FROM teacher_information WHERE User_ID = '" + user + "'", connection);
+            OdbcCommand cmd = new OdbcCommand("SELECT * FROM teacher_information WHERE teacher_ID = '" + teacher + "'", connection);
             OdbcDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                tbxTeacherID.Text = reader["User_ID"].ToString();
-                tbxUsername.Text = reader["userName"].ToString();
-                tbxPassword.Text = reader["userPassword"].ToString();
+                lblteach.Text = reader["teacher_ID"].ToString();
+                tbxUsername.Text = userName;
+                tbxPassword.Text = userPassword;
                 tbxFirstname.Text = reader["firstName"].ToString();
                 tbxLastname.Text = reader["lastName"].ToString();
                 tbxAddress.Text = reader["address"].ToString();
@@ -54,7 +56,9 @@ namespace GLASS_WITH_DATABASE
             {
                 connection.Close();
                 connection.Open();
-                OdbcCommand cmd = new OdbcCommand("UPDATE teacher_information SET userName = '" + tbxUsername.Text + "', userPassword = '" + tbxPassword.Text + "', firstName = '" + tbxFirstname.Text + "', lastName = '" + tbxLastname.Text + "', address = '" + tbxAddress.Text + "', contactNumber = '" + tbxContactNumber.Text + "' WHERE User_ID = '" + user + "'", connection);
+                OdbcCommand cmd = new OdbcCommand("UPDATE teacher_information SET firstName = '" + tbxFirstname.Text + "', lastName = '" + tbxLastname.Text + "', address = '" + tbxAddress.Text + "', contactNumber = '" + tbxContactNumber.Text + "' WHERE teacher_ID = '" + teacher + "'", connection);
+                cmd.ExecuteNonQuery();
+                cmd = new OdbcCommand("UPDATE username_password SET userName = '" + tbxUsername.Text + "', userPassword = '" + tbxPassword.Text + "' WHERE teacher_ID = '" + teacher + "'", connection);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Account Updated!");
             }
@@ -66,7 +70,7 @@ namespace GLASS_WITH_DATABASE
             {
                 connection.Close();
             }
-
+           
         }
     }
 }

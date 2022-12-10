@@ -39,7 +39,7 @@
             // tbxUsername
             // 
             this.tbxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxUsername.Location = new System.Drawing.Point(310, 375);
+            this.tbxUsername.Location = new System.Drawing.Point(315, 375);
             this.tbxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxUsername.Multiline = true;
             this.tbxUsername.Name = "tbxUsername";
@@ -49,7 +49,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(365, 215);
+            this.pictureBox1.Location = new System.Drawing.Point(370, 215);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(148, 142);
@@ -60,7 +60,7 @@
             // tbxPassword
             // 
             this.tbxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPassword.Location = new System.Drawing.Point(310, 416);
+            this.tbxPassword.Location = new System.Drawing.Point(315, 416);
             this.tbxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbxPassword.Name = "tbxPassword";
             this.tbxPassword.Size = new System.Drawing.Size(257, 24);
@@ -69,7 +69,7 @@
             // 
             // btnLogInLogInScreen
             // 
-            this.btnLogInLogInScreen.Location = new System.Drawing.Point(365, 460);
+            this.btnLogInLogInScreen.Location = new System.Drawing.Point(370, 460);
             this.btnLogInLogInScreen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogInLogInScreen.Name = "btnLogInLogInScreen";
             this.btnLogInLogInScreen.Size = new System.Drawing.Size(140, 30);

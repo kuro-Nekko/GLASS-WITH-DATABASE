@@ -9,14 +9,17 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace GLASS_WITH_DATABASE
 {
     public partial class logInScreen : Form
     {
         public OdbcConnection connection = new OdbcConnection("DRIVER={MySQL ODBC 5.1 Driver};Server=localhost;Port=3306;DATABASE=glassdatabase;uId=root;pwd=root;OPTION=3;");
-        public static string userid = "";
-        public static string password = "";
+        public static string userName = "";
+        public static string userPassword = "";
+        public static string userType = "";
+        public static string teacherID = "";
         public logInScreen()
         {
             InitializeComponent();
@@ -25,17 +28,34 @@ namespace GLASS_WITH_DATABASE
         private void btnLogInLogInScreen_Click_1(object sender, EventArgs e)
         {
             connection.Open();
-            OdbcCommand cmd = new OdbcCommand("SELECT * FROM teacher_information WHERE userName = '" + tbxUsername.Text + "' AND userPassword = '" + tbxPassword.Text + "'", connection);
+            OdbcCommand cmd = new OdbcCommand("SELECT * FROM username_password WHERE userName = '" + tbxUsername.Text + "' AND userPassword = '" + tbxPassword.Text + "'", connection);
             OdbcDataReader reader = cmd.ExecuteReader();
      
             if (reader.Read())
             {
-                cmd = new OdbcCommand("SELECT * FROM teacher_information WHERE User_ID = '" + reader["User_ID"].ToString() + "' AND userPassword = '" + reader["userPassword"].ToString() + "'", connection);
-                userid = reader["User_ID"].ToString();
-                password = reader["userPassword"].ToString();
-                Form form = new teacherHome();
-                this.Hide();
-                form.Show();
+                cmd = new OdbcCommand("SELECT * FROM username_password WHERE userName = '" + reader["userName"].ToString() + "' AND userPassword = '" + reader["userPassword"].ToString() + "'", connection);
+                userName = reader["userName"].ToString();
+                userPassword = reader["userPassword"].ToString();
+                userType = reader["user_level"].ToString();
+                
+                if (userType == "Admin")
+                {
+                    Form form = new admin();
+                    this.Hide();
+                    form.Show();
+                }
+                else if (userType == "Teacher")
+                {
+                    teacherID = reader["teacher_ID"].ToString();
+                    Form form = new teacherHome();
+                    this.Hide();
+                    form.Show();
+                }
+                else if (userType == "Student")
+                {
+                    MessageBox.Show("Student");
+                }
+                
             }
             else
             {

@@ -47,11 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addRecordStud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addRecordStud.designer.cs">
+      <DependentUpon>addRecordStud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addRecordTeach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addRecordTeach.designer.cs">
+      <DependentUpon>addRecordTeach.cs</DependentUpon>
+    </Compile>
     <Compile Include="addReminder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="addReminder.Designer.cs">
       <DependentUpon>addReminder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
     </Compile>
     <Compile Include="calendar.cs">
       <SubType>Form</SubType>
@@ -101,6 +119,12 @@
     <Compile Include="teacherSubject.Designer.cs">
       <DependentUpon>teacherSubject.cs</DependentUpon>
     </Compile>
+    <Compile Include="uploadFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadFile.Designer.cs">
+      <DependentUpon>uploadFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlBlank.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,8 +137,17 @@
     <Compile Include="UserControlDays.designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addRecordStud.resx">
+      <DependentUpon>addRecordStud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addRecordTeach.resx">
+      <DependentUpon>addRecordTeach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addReminder.resx">
       <DependentUpon>addReminder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="calendar.resx">
       <DependentUpon>calendar.cs</DependentUpon>
@@ -146,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="teacherSubject.resx">
       <DependentUpon>teacherSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadFile.resx">
+      <DependentUpon>uploadFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlBlank.resx">
       <DependentUpon>UserControlBlank.cs</DependentUpon>

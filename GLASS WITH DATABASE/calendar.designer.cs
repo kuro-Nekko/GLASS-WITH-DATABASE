@@ -62,7 +62,7 @@
             this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gradientPanel1.GradientDirection = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
             this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gradientPanel1.Name = "gradientPanel1";
             this.gradientPanel1.Size = new System.Drawing.Size(1179, 814);
             this.gradientPanel1.TabIndex = 10;
@@ -71,7 +71,7 @@
             // 
             this.daycontainer.BackColor = System.Drawing.Color.Transparent;
             this.daycontainer.Location = new System.Drawing.Point(27, 222);
-            this.daycontainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.daycontainer.Margin = new System.Windows.Forms.Padding(4);
             this.daycontainer.Name = "daycontainer";
             this.daycontainer.Size = new System.Drawing.Size(1120, 505);
             this.daycontainer.TabIndex = 18;
@@ -80,7 +80,7 @@
             // 
             this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnPrev.Location = new System.Drawing.Point(933, 751);
-            this.btnPrev.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrev.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(100, 28);
             this.btnPrev.TabIndex = 17;
@@ -92,7 +92,7 @@
             // 
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnNext.Location = new System.Drawing.Point(1040, 751);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(100, 28);
             this.btnNext.TabIndex = 16;
@@ -210,7 +210,7 @@
             this.ClientSize = new System.Drawing.Size(1179, 814);
             this.Controls.Add(this.gradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "calendar";

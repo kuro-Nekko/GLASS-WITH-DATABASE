@@ -21,5 +21,23 @@ namespace GLASS_WITH_DATABASE
             Form form = new calendar();
             form.ShowDialog();
         }
+
+        private void btnScience_Click(object sender, EventArgs e)
+        {
+            Form form = new calendar();
+            form.ShowDialog();
+        }
+
+        private void btnDS_Click(object sender, EventArgs e)
+        {
+            Form form = new calendar();
+            form.ShowDialog();
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            Form form = new calendar();
+            form.ShowDialog();
+        }
     }
 }

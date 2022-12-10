@@ -33,6 +33,7 @@
             this.cbxReminderType = new System.Windows.Forms.ComboBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnUpload = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbxDescription
@@ -84,11 +85,23 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Type of Reminder";
             // 
+            // btnUpload
+            // 
+            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnUpload.Location = new System.Drawing.Point(40, 240);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(135, 35);
+            this.btnUpload.TabIndex = 7;
+            this.btnUpload.Text = "Upload File";
+            this.btnUpload.UseVisualStyleBackColor = true;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
             // addReminder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(396, 293);
+            this.Controls.Add(this.btnUpload);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.cbxReminderType);
@@ -113,5 +126,6 @@
         private System.Windows.Forms.ComboBox cbxReminderType;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnUpload;
     }
 }

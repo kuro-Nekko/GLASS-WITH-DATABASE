@@ -19,9 +19,11 @@ namespace GLASS_WITH_DATABASE
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new loadingScreen());
-            //Application.Run(new logInScreen());
+            Application.Run(new logInScreen());
             //Application.Run(new calendar());
-            Application.Run(new teacherHome());
+            //Application.Run(new teacherHome());
+            //Application.Run(new admin());
+            //Application.Run(new uploadFile());
         }
     }
 }

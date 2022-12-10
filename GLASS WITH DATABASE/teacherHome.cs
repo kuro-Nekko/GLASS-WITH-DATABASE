@@ -9,11 +9,15 @@ using System.Linq;
 using System.Text;
 //using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Odbc;
+using System.IO;
 
 namespace GLASS_WITH_DATABASE
 {
     public partial class teacherHome : Form
     {
+        OdbcDataAdapter da;
+        public OdbcConnection connection = new OdbcConnection("DRIVER={MySQL ODBC 5.1 Driver};Server=localhost;Port=3306;DATABASE=glassdatabase;uId=root;pwd=root;OPTION=3;");
         public teacherHome()
         {
             InitializeComponent();
@@ -22,7 +26,21 @@ namespace GLASS_WITH_DATABASE
 
         private void teacherHome_Load(object sender, EventArgs e)
         {
-            
+
+            string user = logInScreen.teacherID;
+            connection.Open();
+            OdbcCommand cmd = new OdbcCommand("SELECT * FROM teacher_information WHERE teacher_ID = '" + user + "'", connection);
+            da = new OdbcDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            byte[] img = (byte[])dt.Rows[0][8];
+
+            MemoryStream ms = new MemoryStream();
+
+            //subPnlInfo.Image = Image.FromStream(ms);
+            da.Dispose();
+            connection.Close();
         }
         private void customizeDesign()
         {
